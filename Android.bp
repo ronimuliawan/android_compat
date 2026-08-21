@@ -1,0 +1,61 @@
+// Global compatibility shims (Root "." namespace)
+
+cc_library_shared {
+    name: "libjsoncpp_shim",
+        shared_libs: ["libjsoncpp"],
+            vendor: true,
+}
+
+cc_library_shared {
+    name: "libaudioroute-v34",
+        shared_libs: ["libaudioroute"],
+            vendor: true,
+}
+
+cc_library_shared {
+    name: "libtinyxml2-v34",
+        shared_libs: ["libtinyxml2"],
+            vendor: true,
+}
+
+cc_library_shared {
+    name: "libstagefright_foundation-v33",
+        shared_libs: ["libstagefright_foundation"],
+            vendor: true,
+}
+
+cc_library_shared {
+    name: "libcrypto_shim",
+        shared_libs: ["libcrypto"],
+            vendor: true,
+}
+
+cc_library_shared {
+    name: "libssl_shim",
+        shared_libs: ["libssl"],
+            vendor: true,
+}
+
+cc_library_shared {
+    name: "libinput_shim",
+        shared_libs: ["libinput"],
+            vendor: true,
+}
+
+cc_library_shared {
+    name: "libprocessgroup_shim",
+        shared_libs: ["libprocessgroup"],
+            vendor: true,
+}
+
+cc_library_shared {
+    name: "libcodec2_shim",
+        shared_libs: ["libcodec2_client"],
+            vendor: true,
+}
+
+cc_library_shared {
+    name: "libcodec2_hidl_shim",
+        shared_libs: ["libcodec2_client"],
+            vendor: true,
+}
