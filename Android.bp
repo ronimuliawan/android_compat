@@ -1,61 +1,79 @@
 // Global compatibility shims (Root "." namespace)
 
 cc_library_shared {
-    name: "libjsoncpp_shim",
-        shared_libs: ["libjsoncpp"],
-            vendor: true,
+name: "android.hidl.base@1.0",
+shared_libs: ["libhidlbase"],
+vendor_available: true,
 }
 
 cc_library_shared {
-    name: "libaudioroute-v34",
-        shared_libs: ["libaudioroute"],
-            vendor: true,
+name: "libavservices_minijail_vendor",
+shared_libs: ["libavservices_minijail"],
+vendor: true,
 }
 
 cc_library_shared {
-    name: "libtinyxml2-v34",
-        shared_libs: ["libtinyxml2"],
-            vendor: true,
+name: "libjsoncpp_shim",
+shared_libs: ["libjsoncpp"],
+vendor: true,
 }
 
 cc_library_shared {
-    name: "libstagefright_foundation-v33",
-        shared_libs: ["libstagefright_foundation"],
-            vendor: true,
+name: "libtinyxml2-v34",
+shared_libs: ["libtinyxml2"],
+vendor: true,
 }
 
 cc_library_shared {
-    name: "libcrypto_shim",
-        shared_libs: ["libcrypto"],
-            vendor: true,
+name: "libstagefright_foundation-v33",
+shared_libs: ["libstagefright_foundation"],
+vendor: true,
 }
 
 cc_library_shared {
-    name: "libssl_shim",
-        shared_libs: ["libssl"],
-            vendor: true,
+name: "libcrypto_shim",
+shared_libs: ["libcrypto"],
+vendor: true,
 }
 
 cc_library_shared {
-    name: "libinput_shim",
-        shared_libs: ["libinput"],
-            vendor: true,
+name: "libssl_shim",
+shared_libs: ["libssl"],
+vendor: true,
 }
 
 cc_library_shared {
-    name: "libprocessgroup_shim",
-        shared_libs: ["libprocessgroup"],
-            vendor: true,
+name: "libinput_shim",
+shared_libs: ["libinput"],
+vendor: true,
 }
 
 cc_library_shared {
-    name: "libcodec2_shim",
-        shared_libs: ["libcodec2_client"],
-            vendor: true,
+name: "libprocessgroup_shim",
+shared_libs: ["libprocessgroup"],
+vendor: true,
 }
 
 cc_library_shared {
-    name: "libcodec2_hidl_shim",
-        shared_libs: ["libcodec2_client"],
-            vendor: true,
+name: "libcodec2_shim",
+shared_libs: ["libcodec2_client"],
+vendor: true,
+}
+
+cc_library_shared {
+name: "libprotobuf-cpp-lite-3.9.1-vendorcompat",
+shared_libs: ["libprotobuf-cpp-lite"],
+vendor_available: true,
+}
+
+cc_library_shared {
+name: "libprotobuf-cpp-full-3.9.1-vendorcompat",
+shared_libs: ["libprotobuf-cpp-full"],
+vendor_available: true,
+}
+
+cc_library_shared {
+name: "libaudioroute-v34",
+shared_libs: ["libaudioroute"],
+vendor_available: true,
 }
