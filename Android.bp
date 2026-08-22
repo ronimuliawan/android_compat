@@ -1,24 +1,6 @@
 // Global compatibility shims (Root "." namespace)
 
 cc_library_shared {
-    name: "android.hidl.base@1.0",
-    shared_libs: ["libhidlbase"],
-    vendor_available: true,
-}
-
-cc_library_shared {
-    name: "libavservices_minijail_vendor",
-    shared_libs: ["libavservices_minijail"],
-    vendor: true,
-}
-
-cc_library_shared {
-    name: "libjsoncpp_shim",
-    shared_libs: ["libjsoncpp"],
-    vendor: true,
-}
-
-cc_library_shared {
     name: "libtinyxml2-v34",
     shared_libs: ["libtinyxml2"],
     vendor: true,
@@ -31,32 +13,8 @@ cc_library_shared {
 }
 
 cc_library_shared {
-    name: "libcrypto_shim",
-    shared_libs: ["libcrypto"],
-    vendor: true,
-}
-
-cc_library_shared {
     name: "libssl_shim",
     shared_libs: ["libssl"],
-    vendor: true,
-}
-
-cc_library_shared {
-    name: "libinput_shim",
-    shared_libs: ["libinput"],
-    vendor: true,
-}
-
-cc_library_shared {
-    name: "libprocessgroup_shim",
-    shared_libs: ["libprocessgroup"],
-    vendor: true,
-}
-
-cc_library_shared {
-    name: "libcodec2_shim",
-    shared_libs: ["libcodec2_client"],
     vendor: true,
 }
 
